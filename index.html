@@ -1,1 +1,119 @@
-init
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="menu inactive">
+            <div class="menu-links inactive">
+                <a href="/carousel">Carousel</a>
+                <a href="/formulaire">Formulaire</a>
+            </div>
+        </div>
+        <div class="hamburger"></div>
+        <img src="icons/logo.svg" style="width: 55px"/>
+        <div class="navbar-icons">
+            <img src="icons/search.svg" width="18px">
+            <img src="icons/cart.svg" width="18px">
+        </div>
+    </nav>
+    <header class="carousel-container">
+        <div class="carousel-item opacity-animation">
+            <img src="images/home/header.jpeg"/>
+        </div>
+        <div class="carousel-item hidden">
+            <img src="images/home/header2.jpg"/>
+        </div>
+        <div class="carousel-item hidden">
+            <img src="images/home/header3.jpg"/>
+        </div>
+<!--        <div class="carousel-btn">
+            <div id="left-button" class="left-button">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="chevron-left"><line class="cls-1" x1="11" x2="20" y1="16" y2="7"/><line class="cls-1" x1="20" x2="11" y1="25" y2="16"/></g></svg>
+            </div>
+            <div id="right-button" class="right-button">
+                <svg viewBox="0 0 32 32"  xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="chevron-right"><line class="cls-1" x1="21" x2="12" y1="16" y2="25"/><line class="cls-1" x1="12" x2="21" y1="7" y2="16"/></g></svg>
+            </div>
+        </div>-->
+        <div class="carousel-text">
+            <h1>L’ÉDIT DE
+                L’AUTOMNE</h1>
+            <div class="btns">
+                <a href="http://localhost:8080" class="btn white">S'inscrire </a>
+                <a href="http://localhost:8080" class="btn white">En savoir plus</a>
+            </div>
+        </div>
+    </header>
+    <div class="primary-category-display-container">
+        <div class="">
+            <img src="images/home/primary-category-display/highlight1.jpg"/>
+            <div class="content">
+                <h2>Category 1</h2>
+                <a href="http://localhost:8080" class="btn semi-white">Homme </a>
+                <a href="http://localhost:8080" class="btn semi-white">Femme</a>
+            </div>
+        </div>
+    </div>
+    <div class="secondary-category-display-container">
+        <div>
+            <h2>LA BOUTIQUE DE L'AUTOMNE</h2>
+            <p>Tous les essentiels, réunis en un seul endroit.</p>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <div class="product-img">
+                    <img src="images/categories/pull-hommes.jpeg"/>
+                </div>
+                <div>PULLS HOMME</div>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="images/categories/pull-hommes.jpeg"/>
+                </div>
+                <div>PULLS HOMME</div>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="images/categories/pull-hommes.jpeg"/>
+                </div>
+                <div>PULLS HOMME</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="newsletter-promotion-container">
+        <p>Abonnez-vous à notre newsletter pour recevoir des offres exclusives et des nouvelles de la marque.</p>
+        <div class="btns">
+            <a href="http://localhost:8080" class="btn black">S'inscrire </a>
+            <a href="http://localhost:8080" class="btn black">En savoir plus</a>
+        </div>
+    </div>
+    <footer>
+        <h2>10% Off + free</h2>
+        <span>For All New Levi's® Email Subscribers</span>
+        <form>
+            <input type="email" placeholder="Email Address">
+            <div>By subscribing, I agree that the LS&Co. email me news and offers. I can </div>
+            <button class="btn black" type="submit">SIGN UP</button>
+        </form>
+        <div class="footer-links">
+            <a href="index.html">Accueil</a>
+            <a href="index.html">Accueil</a>
+            <a href="index.html">Accueil</a>
+            <div >© 2023 Levi Strauss & Co.</div>
+        </div>
+        <div class="footer-social">
+            <img src="icons/tiktok.svg" width="25px">
+            <img src="icons/instagram.svg" width="25px">
+            <img src="icons/youtube.svg" width="25px">
+    </footer>
+</div>
+</body>
+<script src="scripts/carousel.js"></script>
+<script src="scripts/hamburger-menu.js"></script>
+</html>
