@@ -10,10 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("../img/jean.jpg");;
+    background-image: url("../../public/assets/images/jean.jpg");
 }
 
-.loginForm {
+.signUpForm {
     display: flex;
     flex-direction: column;
     width: 450px;

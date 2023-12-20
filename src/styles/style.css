@@ -22,8 +22,12 @@ body {
     max-width: var(--max-container-width);
     padding: var(--padding-container);
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+footer .container {
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -176,7 +180,7 @@ nav {
 .newsletter-promotion-container {
     padding: 46px;
     color: white;
-    background: lightgray url("../assets/images/newsletter-promotion-bg.jpeg") no-repeat bottom left;
+    background: lightgray url("../../public/assets/images/newsletter-promotion-bg.jpeg") no-repeat bottom left;
     display: flex;
     flex-direction: column;
     align-items: center;
