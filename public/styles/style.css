@@ -1,9 +1,10 @@
 :root {
     --font-family-primary: 'TN Web Use Only', sans-serif;
-    --font-family-secondary: 'Helvetica Now Text', sans-serif;
+    --font-family-secondary: 'Helvetica Now', sans-serif;
     --main-color: black;
     --secondary-color: #6E6E6E;
     --important-color: #C41320;
+    --valid-color: green;
     --max-container-width: 1280px;
     --padding-container: 0 1.5rem;
     --button-padding: 13px 26px;
@@ -25,7 +26,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: TN Web Use Only, sans-serif;
+    font-family: TN Web Use, sans-serif;
     font-weight: 800;
 }
 
@@ -48,12 +49,11 @@ span {
     font-weight: bold;
     line-height: 20px; /* 125% */
     letter-spacing: 0.32px;
-    text-transform: uppercase;
 }
 
 section {
-    padding: 16px;
-    margin-bottom: 44px;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
 }
 
 input {
@@ -74,6 +74,14 @@ input {
 
 .text-secondary {
     color: var(--secondary-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+}
+
+.text-valid{
+    color: var(--valid-color);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
