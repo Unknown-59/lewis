@@ -1,0 +1,121 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.carrousel {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+}
+
+.carrousel-img img {
+    object-fit: cover;
+}
+
+.side-img {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.side-img img {
+    padding-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.product-color {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.product-size {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.checked {
+    color: orange;
+}
+
+.product-length {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.btn-length {
+    background-color: transparent;
+    border: none; /* Change the border color as needed */
+    color: black; /* Text color - usually the same as the border for consistency */
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: for rounded corners */
+    transition: all 0.3s ease;
+}
+
+.btn-size {
+    background-color: transparent;
+    border: none; /* Change the border color as needed */
+    color: black; /* Text color - usually the same as the border for consistency */
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: for rounded corners */
+    transition: all 0.3s ease;
+}
+
+.quantity-title {
+    display: inline-block;
+}
+
+.btn-add {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none; /* No border */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease;
+}
