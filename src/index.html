@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="../public/styles/style.css" rel="stylesheet"/>
+    <link href="../public/styles/home.css" rel="stylesheet"/>
+    <link href="../public/styles/carousel.css" rel="stylesheet"/>
 </head>
 <body>
 <nav class="">
     <div class="menu inactive">
         <div class="menu-links inactive">
-            <a href="/carousel">Carousel</a>
-            <a href="/formulaire">Formulaire</a>
+            <a href="index.html">Accueil</a>
+            <a href="boutique.html">Boutique</a>
         </div>
     </div>
     <div class="hamburger"></div>
     <img class="logo" src="../public/assets/icons/logo.svg" style="width: 55px"/>
     <div class="navbar-icons">
         <img src="../public/assets/icons/search.svg" width="18px">
-        <img src="../public/assets/icons/cart.svg" width="18px">
+        <a href="panier.html">
+            <img src="../public/assets/icons/cart.svg" width="18px">
+        </a>
     </div>
 </nav>
 <header class="carousel-container">
     <div class="carousel-item opacity-animation">
-        <img src="../public/assets/images/home/header.jpeg"/>
+        <img src="../public/assets/images/home/header/header.jpeg"/>
     </div>
     <div class="carousel-item hidden">
-        <img src="../public/assets/images/home/header2.jpg"/>
+        <img src="../public/assets/images/home/header/header2.jpg"/>
     </div>
     <div class="carousel-item hidden">
-        <img src="../public/assets/images/home/header3.jpg"/>
+        <img src="../public/assets/images/home/header/header3.jpg"/>
     </div>
     <!--        <div class="carousel-btn">
                 <div id="left-button" class="left-button">
@@ -43,8 +47,8 @@
         <h1>L’ÉDIT DE
             L’AUTOMNE</h1>
         <div class="btns">
-            <a href="http://localhost:8080" class="btn white">S'inscrire </a>
-            <a href="http://localhost:8080" class="btn white">En savoir plus</a>
+            <a href="boutique.html" class="btn white">S'inscrire </a>
+            <a href="boutique.html" class="btn white">En savoir plus</a>
         </div>
     </div>
 </header>
@@ -53,17 +57,17 @@
         <div class="">
             <img src="../public/assets/images/home/primary-category-display/highlight1.jpg"/>
             <div class="content">
-                <h2>Category 1</h2>
-                <a href="http://localhost:8080" class="btn semi-white">Homme </a>
-                <a href="http://localhost:8080" class="btn semi-white">Femme</a>
+                <h2>Sherpas</h2>
+                <a href="boutique.html" class="btn semi-white">Homme </a>
+                <a href="boutique.html" class="btn semi-white">Femme</a>
             </div>
         </div>
         <div class="">
-            <img src="../public/assets/images/home/primary-category-display/highlight1.jpg"/>
+            <img src="../public/assets/images/home/primary-category-display/highlight2.jpg"/>
             <div class="content">
-                <h2>Category 1</h2>
-                <a href="http://localhost:8080" class="btn semi-white">Homme </a>
-                <a href="http://localhost:8080" class="btn semi-white">Femme</a>
+                <h2>Sherpas</h2>
+                <a href="boutique.html" class="btn semi-white">Homme </a>
+                <a href="boutique.html" class="btn semi-white">Femme</a>
             </div>
         </div>
     </div>
@@ -73,30 +77,30 @@
             <p>Tous les essentiels, réunis en un seul endroit.</p>
         </div>
         <div class="product-grid">
-            <div class="product">
+            <a href="boutique.html" class="product">
                 <div class="product-img">
-                    <img src="../public/assets/images/categories/pull-hommes.jpeg"/>
+                    <img src="../public/assets/images/home/secondary-category-display/favoris-femme.avif"/>
+                </div>
+                <div>FAVORIS FEMME</div>
+            </a>
+            <a href="boutique.html" class="product">
+                <div class="product-img">
+                    <img src="../public/assets/images/home/secondary-category-display/favoris-homme.avif"/>
+                </div>
+                <div>FAVORIS HOMME</div>
+            </a>
+            <a href="boutique.html" class="product">
+                <div class="product-img">
+                    <img src="../public/assets/images/home/secondary-category-display/favoris-enfants.avif"/>
                 </div>
                 <div>PULLS HOMME</div>
-            </div>
-            <div class="product">
+            </a>
+            <a href="boutique.html" class="product">
                 <div class="product-img">
-                    <img src="../public/assets/images/categories/pull-hommes.jpeg"/>
+                    <img src="../public/assets/images/home/secondary-category-display/acheter-tout.avif"/>
                 </div>
-                <div>PULLS HOMME</div>
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="../public/assets/images/categories/pull-hommes.jpeg"/>
-                </div>
-                <div>PULLS HOMME</div>
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="../public/assets/images/categories/pull-hommes.jpeg"/>
-                </div>
-                <div>PULLS HOMME</div>
-            </div>
+                <div>ACHETER TOUT</div>
+            </a>
         </div>
 
     </div>
@@ -106,8 +110,8 @@
     <div class="container">
         <p>Abonnez-vous à notre newsletter pour recevoir des offres exclusives et des nouvelles de la marque.</p>
         <div class="btns">
-            <a href="http://localhost:8080" class="btn black">S'inscrire </a>
-            <a href="http://localhost:8080" class="btn black">En savoir plus</a>
+            <a href="boutique.html" class="btn black">S'inscrire </a>
+            <a href="boutique.html" class="btn black">En savoir plus</a>
         </div>
     </div>
 </div>
@@ -124,8 +128,7 @@
         </div>
         <div class="footer-links">
             <a href="index.html">Accueil</a>
-            <a href="index.html">Accueil</a>
-            <a href="index.html">Accueil</a>
+            <a href="boutique.html">Boutique</a>
             <div>© 2023 Levi Strauss & Co.</div>
         </div>
         <div class="footer-social">

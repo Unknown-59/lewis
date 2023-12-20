@@ -1,6 +1,7 @@
 :root {
     --font-family-primary: 'TN Web Use Only', sans-serif;
     --font-family-secondary: 'Helvetica Now', sans-serif;
+    --font-size-basic: 16px;
     --main-color: black;
     --secondary-color: #6E6E6E;
     --important-color: #C41320;
@@ -37,14 +38,13 @@ a,p,div {
 }
 
 
-
 h2 {
     text-align: center;
 }
 
 span {
-    color: #000;
-    font-size: 16px;
+    color: var(--main-color);
+    font-size: var(--font-size-basic);
     font-style: normal;
     font-weight: bold;
     line-height: 20px; /* 125% */
@@ -88,22 +88,8 @@ input {
     line-height: 16px; /* 133.333% */
 }
 
-.carousel-container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    color: white
-}
 
-.carousel-item {
-    width: 100%;
-    overflow: hidden;
-    opacity: 0;
-    position: absolute;
-}
-
-.carousel-item img, .primary-category-display-container img, .secondary-category-display-container img, .shop-product-grid .product img, .categories-highlight img{
+.shop-product-grid .product img, .categories-highlight img{
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -111,44 +97,6 @@ input {
 
 .categories-highlight img,  .shop-product-grid .product img, .categories-highlight img  {
     object-position: top;
-}
-
-.carousel-btn {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    height:25px;
-    width: 100%;
-}
-
-.carousel-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-    z-index: 9;
-    width: 100%;
-    text-align: center;
-}
-
-.left-button, .right-button {
-    width: 32px;
-    height: 32px;
-    background-color:rgba(0,0,0,0.5);;
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 4px;
-}
-
-.left-button {
-    margin-left: 10px;
-}
-
-.right-button {
-    margin-right:10px;
 }
 
 .btn {
@@ -204,8 +152,13 @@ input {
 nav {
     top: 0;
     display: flex;
+    align-items: center;
     position: relative;
     padding: 1.5rem;
+}
+
+.navbar-icons {
+    z-index: 80;
 }
 
 .navbar-icons> img {
@@ -218,66 +171,6 @@ nav {
 
 .navbar-icons>img:not(:last-child) {
     margin-right: 1.5rem;
-}
-
-.primary-category-display-container {
-    height: 400px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.primary-category-display-container>div {
-    position: relative;
-    max-height: 400px;
-}
-
-.primary-category-display-container .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0 20px; /* Ajoutez un padding horizontal de 20px, par exemple */
-    text-align: center; /* Centrez le contenu horizontalement */
-    color: white; /* Pour une meilleure lisibilité, assurez-vous que le texte est visible sur l'image */
-    z-index: 1; /* Pour placer le contenu au-dessus de l'image */
-    width: calc(100% - 60px); /* Largeur de 100% moins le double du padding horizontal */
-    max-width: calc(100% - 60px); /* Assurez-vous que la largeur n'excède pas la taille de l'image */
-    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.secondary-category-display-container p {
-    text-align: center;
-}
-
-.secondary-category-display-container {
-    margin-top: 48px;
-    margin-bottom: 48px;
-}
-
-.secondary-category-display-container .product div{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.secondary-category-display-container img {
-    max-height: 300px;
-    max-width: 230px;
-}
-
-.secondary-category-display-container .product-img {
-    height: 290px;
-}
-
-.secondary-category-display-container .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
 }
 
 .newsletter-promotion-container {
@@ -296,6 +189,7 @@ footer {
 
 footer h2 {
     text-align: left;
+    margin: 0;
 }
 
 footer form, footer button {
@@ -325,101 +219,8 @@ footer form, footer button {
     margin-right: 20px;
 }
 
-.shop-header {
-    text-align: center;
-    margin-top: 32px;
-    margin-bottom: 56px;
-}
-
-.breadcrumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.breadcrumb>* {
-    margin-right: 10px;
-}
-
-.breadcrumb>*:last-child{
-    font-weight: bold;
-}
-
-footer h2 {
-    margin: 0
-}
-
-.image-container {
-    margin-bottom: 20px;
-}
-
-.categories-highlight {
-    display: grid;
-    gap: 16px;
-}
-
-.filter-section {
-    display: flex;
-    margin-bottom: 20px !important;
-}
-
-.shop-product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 56px 16px;
-}
-
-.shop-product-grid .text-important {
-    margin-top: 16px;
-}
-
-.shop-product-grid .text-secondary {
-    margin-bottom: 16px;
-}
-
-.shop-product-grid .promotional-text {
-    margin-top: 12px !important;
-}
-
-.products {
-    display: grid;
-}
-
-.filter-section form>div{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.filter-section form{
-    font-size: 14px;
-}
-
-
-.filter-section form input{
-    width: 16px;
-    margin-right: 8px;
-}
-
-.filter-section .filter-title {
-    font-weight: bold;
-    margin-bottom: 32px;
-    margin-top: 16px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.filter-section .stock {
-    color: var(--secondary-color);
-
-    margin-left: 10px;
-}
-
-
 
 @media screen and (min-width:768px) {
-
 
     .hamburger {
         display: none;
@@ -449,14 +250,6 @@ footer h2 {
         margin-right: 32px;
     }
 
-    .carousel-container, .carousel-item {
-        height: 600px;
-    }
-
-    .secondary-category-display-container .product-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
     .newsletter {
         display: grid;
         grid-template-columns: 1fr 1fr 2fr;
@@ -480,35 +273,7 @@ footer h2 {
     footer {
         padding: 76px;
     }
-
-    .categories-highlight {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .filter-section {
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .image-container {
-        height: 420px;
-    }
-
-    .products {
-        grid-template-columns: 260px 1fr;
-    }
-
-    .products>*:first-child {
-        padding-right: 64px
-    }
-
-
 }
-
-
-
-
-
 
 @media screen and (max-width:768px) {
 
@@ -558,7 +323,6 @@ footer h2 {
         justify-content: center;
     }
 
-
     .hamburger {
         z-index: 999;
         position: relative;
@@ -597,30 +361,6 @@ footer h2 {
         transform: rotate(45deg) translateY(-5px);
     }
 
-    .primary-category-display-container {
-        grid-template-columns: 1fr;
-    }
-
-    .primary-category-display-container h2 {
-        color: white
-    }
-
-    .primary-category-display-container>*:last-child {
-        display: none;
-    }
-
-    .carousel-container, .carousel-item {
-        height: 400px;
-    }
-
-    .secondary-category-display-container .product-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .secondary-category-display-container .product-grid>*:last-child {
-        display: none;
-    }
-
     footer form {
         margin-top: 56px;
     }
@@ -633,26 +373,4 @@ footer h2 {
         padding: 36px !important;
     }
 
-    .categories-highlight {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .categories-highlight>*:nth-child(-n+2) {
-        display: none;
-    }
-
-    .filter-section {
-        justify-content: space-between;
-    }
-
-    .image-container {
-        height: 240px;
-    }
-
-    .filter {
-        display: none;
-    }
-
 }
-
-
