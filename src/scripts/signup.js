@@ -29,7 +29,7 @@ function formHandler(event) {
     localStorage.setItem('name', name);
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
-    window.location.href = '../html/index.html';
+    window.location.href = '../index.html';
 }
 
 // Affichage des erreurs concernant le nom
