@@ -10,14 +10,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("../img/jean.jpg");
+    background-image: url("../../public/img/jean.jpg");
+    background-size: cover;
 }
 
-.signUpForm {
+.loginForm {
     display: flex;
     flex-direction: column;
+    max-width: 45%;
     width: 450px;
-    background-color: #fff;
+    background-color: #F8F8F8;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -49,8 +51,39 @@ button:hover {
     background-color: red;
 }
 
+.header-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-form h1 {
+    margin-right: 10px;
+}
+
+.header-form img {
+    width: 25%;
+    height: auto;
+    justify-content: end;
+}
+
+
 /* Responsive styling */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+    input, button {
+        padding: 8px;
+    }
+    body {
+        font-size: 14px;
+    }
+    button {
+        padding: 8px;
+    }
+    .container {
+        flex-direction: column;
+        background-size: cover;
+        padding: 10px;
+    }
     .signUpForm {
         width: 80%;
     }
