@@ -1,0 +1,130 @@
+.shop-header {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 56px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb>* {
+    margin-right: 10px;
+}
+
+.breadcrumb>*:last-child{
+    font-weight: bold;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.categories-highlight {
+    display: grid;
+    gap: 16px;
+}
+
+.filter-section {
+    display: flex;
+    margin-bottom: 20px !important;
+}
+
+.shop-product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 56px 16px;
+}
+
+.shop-product-grid .text-important {
+    margin-top: 16px;
+}
+
+.shop-product-grid .text-secondary {
+    margin-bottom: 16px;
+}
+
+.shop-product-grid .promotional-text {
+    margin-top: 12px !important;
+}
+
+.products {
+    display: grid;
+}
+
+.filter-section form>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.filter-section form{
+    font-size: 14px;
+}
+
+
+.filter-section form input{
+    width: 16px;
+    margin-right: 8px;
+}
+
+.filter-section .filter-title {
+    font-weight: bold;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-section .stock {
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .categories-highlight {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .filter-section {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .image-container {
+        height: 420px;
+    }
+
+    .products {
+        grid-template-columns: 260px 1fr;
+    }
+
+    .products>*:first-child {
+        padding-right: 64px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .categories-highlight {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories-highlight>*:nth-child(-n+2) {
+        display: none;
+    }
+
+    .filter-section {
+        justify-content: space-between;
+    }
+
+    .image-container {
+        height: 240px;
+    }
+
+    .filter {
+        display: none;
+    }
+}
+
+

@@ -2,9 +2,145 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link href="styles/home.css" rel="stylesheet"/>
+    <link href="styles/carousel.css" rel="stylesheet"/>
 </head>
 <body>
-    <h1>Accueil</h1>
+<nav class="">
+    <div class="menu inactive">
+        <div class="menu-links inactive">
+            <a href="index.html">Accueil</a>
+            <a href="shop.html">Boutique</a>
+        </div>
+    </div>
+    <div class="hamburger"></div>
+    <a href="index.html">
+        <img class="logo" src="../public/assets/icons/logo.svg" style="width: 55px"/>
+    </a>
+    <div class="navbar-icons">
+        <img src="../public/assets/icons/search.svg" width="18px">
+        <a href="cart.html">
+            <img src="../public/assets/icons/cart.svg" width="18px">
+        </a>
+    </div>
+</nav>
+<header class="carousel-container">
+    <div class="carousel-item opacity-animation">
+        <img src="../public/assets/images/home/header/header.jpeg"/>
+    </div>
+    <div class="carousel-item hidden">
+        <img src="../public/assets/images/home/header/header2.jpg"/>
+    </div>
+    <div class="carousel-item hidden">
+        <img src="../public/assets/images/home/header/header3.jpg"/>
+    </div>
+    <!--        <div class="carousel-btn">
+                <div id="left-button" class="left-button">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="chevron-left"><line class="cls-1" x1="11" x2="20" y1="16" y2="7"/><line class="cls-1" x1="20" x2="11" y1="25" y2="16"/></g></svg>
+                </div>
+                <div id="right-button" class="right-button">
+                    <svg viewBox="0 0 32 32"  xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="chevron-right"><line class="cls-1" x1="21" x2="12" y1="16" y2="25"/><line class="cls-1" x1="12" x2="21" y1="7" y2="16"/></g></svg>
+                </div>
+            </div>-->
+    <div class="carousel-text">
+        <h1>L’ÉDIT DE
+            L’AUTOMNE</h1>
+        <div class="btns">
+            <a href="shop.html" class="btn white">S'inscrire </a>
+            <a href="shop.html" class="btn white">En savoir plus</a>
+        </div>
+    </div>
+</header>
+<main class="">
+    <div class="primary-category-display-container">
+        <div class="">
+            <img src="../public/assets/images/home/primary-category-display/highlight1.jpg"/>
+            <div class="content">
+                <h2>Sherpas</h2>
+                <a href="shop.html" class="btn semi-white">Homme </a>
+                <a href="shop.html" class="btn semi-white">Femme</a>
+            </div>
+        </div>
+        <div class="">
+            <img src="../public/assets/images/home/primary-category-display/highlight2.jpg"/>
+            <div class="content">
+                <h2>Sherpas</h2>
+                <a href="shop.html" class="btn semi-white">Homme </a>
+                <a href="shop.html" class="btn semi-white">Femme</a>
+            </div>
+        </div>
+    </div>
+    <div class="secondary-category-display-container container">
+        <div>
+            <h2>LA BOUTIQUE DE L'AUTOMNE</h2>
+            <p>Tous les essentiels, réunis en un seul endroit.</p>
+        </div>
+        <div class="product-grid">
+            <a href="shop.html" class="product">
+                <div class="product-img">
+                    <img src="../public/assets/images/home/secondary-category-display/favoris-femme.avif"/>
+                </div>
+                <div>FAVORIS FEMME</div>
+            </a>
+            <a href="shop.html" class="product">
+                <div class="product-img">
+                    <img src="../public/assets/images/home/secondary-category-display/favoris-homme.avif"/>
+                </div>
+                <div>FAVORIS HOMME</div>
+            </a>
+            <a href="shop.html" class="product">
+                <div class="product-img">
+                    <img src="../public/assets/images/home/secondary-category-display/favoris-enfants.avif"/>
+                </div>
+                <div>PULLS HOMME</div>
+            </a>
+            <a href="shop.html" class="product">
+                <div class="product-img">
+                    <img src="../public/assets/images/home/secondary-category-display/acheter-tout.avif"/>
+                </div>
+                <div>ACHETER TOUT</div>
+            </a>
+        </div>
+
+    </div>
+</main>
+
+<div class="newsletter-promotion-container">
+    <div class="container">
+        <p>Abonnez-vous à notre newsletter pour recevoir des offres exclusives et des nouvelles de la marque.</p>
+        <div class="btns">
+            <a href="shop.html" class="btn black">S'inscrire </a>
+            <a href="shop.html" class="btn black">En savoir plus</a>
+        </div>
+    </div>
+</div>
+<footer class="">
+    <div class="container">
+        <div class="newsletter">
+            <h2>10% Off + free</h2>
+            <span>For All New Levi's® Email Subscribers</span>
+            <form>
+                <input type="email" placeholder="Email Address">
+                <div class="conditions">By subscribing, I agree that the LS&Co. email me news and offers. I can</div>
+                <button class="btn black" type="submit">SIGN UP</button>
+            </form>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Accueil</a>
+            <a href="shop.html">Boutique</a>
+            <div>© 2023 Levi Strauss & Co.</div>
+        </div>
+        <div class="footer-social">
+            <img src="../public/assets/icons/tiktok.svg" width="25px">
+            <img src="../public/assets/icons/instagram.svg" width="25px">
+            <img src="../public/assets/icons/youtube.svg" width="25px">
+        </div>
+    </div>
+</footer>
 </body>
+<script src="scripts/carousel.js"></script>
+<script src="scripts/hamburger-menu.js"></script>
 </html>
