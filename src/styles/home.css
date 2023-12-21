@@ -54,6 +54,7 @@
     max-width: 230px;
 }
 
+
 .secondary-category-display-container .product-img {
     height: 290px;
 }
@@ -70,7 +71,7 @@
     }
 
     .secondary-category-display-container .product div{
-        justify-content: start;
+        justify-content: center;
     }
 
 }
