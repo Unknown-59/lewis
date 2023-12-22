@@ -6,6 +6,7 @@ const leftButton = document.querySelector("#left-button");
 
 let actualCarouselItem = undefined;
 
+// ok
 window.addEventListener("load", (event) => {
 	if (carouselItems.length > 0) {
 		actualCarouselItem = carouselItems[0];
