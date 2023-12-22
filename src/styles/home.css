@@ -1,0 +1,108 @@
+h2 {
+    text-align: center;
+}
+
+.primary-category-display-container img, .secondary-category-display-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.primary-category-display-container {
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.primary-category-display-container>div {
+    position: relative;
+    max-height: 400px;
+}
+
+.primary-category-display-container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px; /* Ajoutez un padding horizontal de 20px, par exemple */
+    text-align: center; /* Centrez le contenu horizontalement */
+    color: white; /* Pour une meilleure lisibilité, assurez-vous que le texte est visible sur l'image */
+    z-index: 1; /* Pour placer le contenu au-dessus de l'image */
+    width: calc(100% - 60px); /* Largeur de 100% moins le double du padding horizontal */
+    max-width: calc(100% - 60px); /* Assurez-vous que la largeur n'excède pas la taille de l'image */
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary-category-display-container p {
+    text-align: center;
+}
+
+.secondary-category-display-container {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.secondary-category-display-container .product div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.secondary-category-display-container img {
+    max-height: 300px;
+    max-width: 230px;
+}
+
+
+.secondary-category-display-container .product-img {
+    height: 290px;
+}
+
+.secondary-category-display-container .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+@media screen and (min-width:768px) {
+    .secondary-category-display-container .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .secondary-category-display-container .product div{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .primary-category-display-container {
+        grid-template-columns: 1fr;
+    }
+
+    .primary-category-display-container h2 {
+        color: white
+    }
+
+    .primary-category-display-container>*:last-child {
+        display: none;
+    }
+
+    .secondary-category-display-container .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .secondary-category-display-container .product-grid>*:last-child {
+        display: none;
+    }
+
+    .secondary-category-display-container .product div{
+        justify-content: center;
+    }
+
+}
