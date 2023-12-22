@@ -18,19 +18,22 @@
     <meta name="robots" content="index,follow">
     <title>Connexion | Levi's® FR</title>
     <link href="styles/style.css" rel="stylesheet"/>
-    <link href="styles/login.css" rel="stylesheet"/>
+    <link href="styles/auth.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
     <link rel="sitemap" type="application/xml" title="Plan du site" href="../public/sitemap.xml">
 </head>
 <body>
-    <div class="container">
+    <div class="auth-container">
         <form class="loginForm" method="post">
-            <h1>Log In</h1>
+            <h1>Connexion</h1>
             <label style="padding-bottom: 10px">Email</label>
             <input type="text" name="email" placeholder="Email" required>
-            <label style="padding-bottom: 10px">Password</label>
-            <input type="password" name="password" minlength="10" placeholder="Password" required>
-            <button type="submit" name="submit">Log In</button>
+            <label style="padding-bottom: 10px">Mot de passe</label>
+            <input type="password" name="password" minlength="10" placeholder="********" required>
+            <div class="buttons-container">
+                <button class="btn red" type="submit" name="submit">Se connecter</button>
+                <a href="signup.html" class="btn semi-black" type="submit" name="submit">S'inscrire</a>
+            </div>
         </form>
     </div>
     <script src="scripts/login.js"></script>

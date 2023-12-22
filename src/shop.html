@@ -23,7 +23,7 @@
     <link rel="sitemap" type="application/xml" title="Plan du site" href="../public/sitemap.xml">
 </head>
 <body>
-<nav class="">
+<nav>
     <div class="menu inactive">
         <div class="menu-links inactive">
             <a href="index.html">Accueil</a>
@@ -32,12 +32,15 @@
     </div>
     <div class="hamburger"></div>
     <a href="index.html">
-        <img class="logo" src="../public/assets/icons/logo.svg" style="width: 55px" alt=""/>
+        <img alt="" class="logo" src="../public/assets/icons/logo.svg" style="width: 55px"/>
     </a>
     <div class="navbar-icons">
+        <a class="login" style="margin-right: 16px" href="signup.html">
+            <img src="../public/assets/icons/user.svg" width="18px">
+        </a>
         <img src="../public/assets/icons/search.svg" width="18px">
         <a href="cart.html">
-            <img src="../public/assets/icons/cart.svg" width="18px">
+            <img alt="" src="../public/assets/icons/cart.svg" width="18px">
         </a>
     </div>
 </nav>
@@ -180,6 +183,7 @@
 </main>
 
 </body>
+<script src="scripts/isLogged.js"></script>
 <script src="scripts/carousel.js"></script>
 <script src="scripts/hamburger-menu.js"></script>
 </html>

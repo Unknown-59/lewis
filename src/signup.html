@@ -18,23 +18,26 @@
     <meta name="robots" content="index,follow">
     <title>S'inscrire | Levi's® FR</title>
     <link href="styles/style.css" rel="stylesheet"/>
-    <link href="styles/signup.css" rel="stylesheet"/>
+    <link href="styles/auth.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
     <link rel="sitemap" type="application/xml" title="Plan du site" href="../public/sitemap.xml">
 </head>
 <body>
-    <div class="container">
+    <div class="auth-container">
         <form class="signUpForm">
-            <h1>Sign Up</h1>
-            <label style="padding-bottom: 10px">Name</label>
-            <input type="text" name="name" placeholder="Name" required>
+            <h1>Inscription</h1>
+            <label style="padding-bottom: 10px">Nom</label>
+            <input type="text" name="name" placeholder="Nom" required>
             <label style="padding-bottom: 10px">Email</label>
             <input type="text" name="email" placeholder="Email" required>
-            <label style="padding-bottom: 10px">Password</label>
-            <input type="password" name="password" minlength="10" placeholder="Password" required>
-            <label style="padding-bottom: 10px">Confirm Password</label>
-            <input type="password" name="password2" minlength="10" placeholder="Confirm Password" required>
-            <button type="submit" name="submit">Sign Up</button>
+            <label style="padding-bottom: 10px">Mot de passe</label>
+            <input type="password" name="password" minlength="10" placeholder="********" required>
+            <label style="padding-bottom: 10px">Confirmez votre de passe</label>
+            <input type="password" name="password2" minlength="10" placeholder="********" required>
+            <div class="buttons-container">
+                <button class="btn red" type="submit" name="submit">S'inscrire</button>
+                <a href="login.html" class="btn semi-black" type="submit" name="submit">Se connecter</a>
+            </div>
         </form>
     </div>
     <script src="scripts/signup.js"></script>

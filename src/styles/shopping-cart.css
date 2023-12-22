@@ -1,0 +1,174 @@
+h2 {
+    text-align: left;
+    font-size: var(--font-size-basic);
+}
+
+span {
+    font-weight: bold;
+}
+
+
+
+.cart-status {
+   display: flex;
+    justify-content: space-between;
+}
+
+.payments-method {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.payments-method>* {
+    text-align: center;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    text-align: center;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.product-details .product-img {
+    height: 180px;
+}
+
+.product-details .product-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: top;
+}
+
+.product-informations {
+    margin-left: 64px;
+    position: relative;
+}
+
+.product-informations >*{
+    margin-bottom: 20px;
+}
+
+.product-informations .description>* {
+    margin-bottom: 4px;
+}
+
+.total-product {
+    display: flex;
+    align-items: center;
+}
+
+.total-product>* {
+    margin-right: 8px;
+}
+
+.payment-recap > * {
+    padding-bottom: 24px;
+}
+
+.coins {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-btn {
+    display: flex;
+    flex-direction: column;
+    width: fit-content !important;
+    min-width: fit-content !important;
+    border: grey 1px solid;
+    border-radius: 3px;
+}
+
+.promo-btn.active {
+    border: grey 1px solid;
+}
+
+.promo-btn.inactive {
+    background: black;
+    color: white;
+}
+
+.btn {
+    align-items: start;
+}
+
+.promo-code {
+    display: flex;
+}
+
+ .article-price, .expedition, .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-code > * {
+    margin-right: 16px;
+}
+
+.total {
+    padding-top: 24px;
+    border-top: 1px solid black;
+}
+
+.total .price {
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    h2 {
+        margin-top: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:0 64px;
+        margin-top: 64px;
+    }
+
+    main .payment {
+        order:3;
+        grid-column: 2;
+    }
+
+    main .product-details {
+        order: 1;
+    }
+
+    main .payment-recap {
+        order:2;
+        border-bottom: 1px solid grey;
+    }
+
+    .payment-recap .expedition{
+        padding-bottom: 5px;
+    }
+
+    .payment-recap .text-valid{
+        padding-bottom: 0;
+    }
+
+    .total {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .payment-recap {
+        border-top: 1px solid grey;
+        padding: 24px 0;
+    }
+}
