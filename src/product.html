@@ -9,6 +9,8 @@
 </head>
 <body>
 <nav class="">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
     <div class="menu inactive">
         <div class="menu-links inactive">
             <a href="index.html">Accueil</a>
@@ -20,6 +22,9 @@
         <img class="logo" src="../public/assets/icons/logo.svg" style="width: 55px"/>
     </a>
     <div class="navbar-icons">
+        <a class="login" style="margin-right: 16px" href="signup.html">
+            <img src="../public/assets/icons/user.svg" width="18px">
+        </a>
         <img src="../public/assets/icons/search.svg" width="18px">
         <a href="cart.html">
             <img src="../public/assets/icons/cart.svg" width="18px">
@@ -153,5 +158,6 @@
     </div>
 </footer>
 <script src="scripts/product.js"></script>
+<script src="scripts/isLogged.js"></script>
 </body>
 </html>
