@@ -18,9 +18,9 @@ function formHandler(event) {
     }
     if (email === save_email && password === save_password) {
         console.log('Login successful');
-        window.location.href = '../index.html';
+        localStorage.setItem('isLogged', 'isLogged');
+        window.location.href = 'index.html';
     }
-
     data.forEach((value, key) => {
         console.log(`${key}: ${value}`);
     });

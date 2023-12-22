@@ -6,6 +6,7 @@ const leftButton = document.querySelector("#left-button");
 
 let actualCarouselItem = undefined;
 
+// Sélectionne toutes les images avec la classe 'side-img' et ajoute un gestionnaire d'événements à chacune d'elles.
 window.addEventListener("load", (event) => {
 	if (carouselItems.length > 0) {
 		actualCarouselItem = carouselItems[0];
@@ -13,6 +14,7 @@ window.addEventListener("load", (event) => {
 	}
 });
 
+// Fonction qui change la source de l'image principale du carrousel.
 const nextClick = () => {
 	actualCarouselItem.classList.remove('block', 'opacity-animation');
 	actualCarouselItem.classList.add('hidden');
@@ -28,6 +30,7 @@ const nextClick = () => {
 	
 	nextItem.classList.remove('hidden');
 	nextItem.classList.add('block', 'opacity-animation');
+	console.log(nextItem);
 	actualCarouselItem = nextItem;
 };
 
