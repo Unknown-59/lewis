@@ -1,3 +1,11 @@
+* {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,12 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-<<<<<<<< HEAD:src/style/signup.css
-    background-image: url("../../public/img/jean.jpg");
     background-size: cover;
-========
     background-image: url("../../public/assets/images/jean.jpg");
->>>>>>>> main:src/styles/signup.css
 }
 
 .signUpForm {

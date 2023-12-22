@@ -1,3 +1,12 @@
+.spinner-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
 .primary-category-display-container img, .secondary-category-display-container img {
     object-fit: cover;
     height: 100%;

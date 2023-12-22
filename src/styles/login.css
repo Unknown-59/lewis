@@ -10,12 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-<<<<<<<< HEAD:src/style/login.css
-    background-image: url("../../public/img/jean.jpg");
     background-size: cover;
-========
     background-image: url("../../public/assets/images/jean.jpg");;
->>>>>>>> main:src/styles/login.css
 }
 
 .loginForm {

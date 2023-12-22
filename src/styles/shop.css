@@ -19,11 +19,19 @@
 }
 
 .image-container {
+    width: 100%;
+    overflow: hidden;
     margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%; /* Ajuste la largeur de l'image */
+    height: auto;
 }
 
 .categories-highlight {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crée des colonnes de taille flexible */
     gap: 16px;
 }
 
