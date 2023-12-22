@@ -3,6 +3,8 @@ form.addEventListener('submit', formHandler);
 
 //Gestion du formulaire d'enregistrement
 
+// ok
+
 function formHandler(event) {
     event.preventDefault();
     const data = new FormData(event.target);

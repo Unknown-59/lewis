@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu')
 
+// ok
 hamburger.addEventListener('click', ()=> {
 	hamburger.classList.toggle('active');
 	document.body.style.overflow = document.body.style.overflow === 'hidden' ? 'unset' : 'hidden';

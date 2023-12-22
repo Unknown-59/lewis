@@ -2,6 +2,7 @@ const form = document.querySelector('.loginForm');
 form.addEventListener('submit', formHandler);
 
 //Gestion du formulaire de connexion
+// ok
 function formHandler(event) {
     event.preventDefault();
     const data = new FormData(event.target);
