@@ -246,6 +246,10 @@ footer form, footer button {
     margin-right: 20px;
 }
 
+.btn {
+    min-width: 150px;
+}
+
 
 @media screen and (min-width:768px) {
 
@@ -299,10 +303,6 @@ footer form, footer button {
 
     footer {
         padding: 76px;
-    }
-
-    .btn {
-        min-width: 150px;
     }
 }
 
