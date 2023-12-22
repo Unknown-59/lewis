@@ -1,5 +1,4 @@
 :root {
-    --font-family-primary: 'TN Web Use Only', sans-serif;
     --font-family-secondary: 'Helvetica Now', sans-serif;
     --font-size-basic: 16px;
     --main-color: black;
@@ -41,9 +40,22 @@ a,p,div {
     font-family: Helvetica Now, sans-serif;
 }
 
+p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
 
-h2 {
-    text-align: center;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: unset;
 }
 
 span {
@@ -282,7 +294,6 @@ footer form, footer button {
 @media screen and (max-width:768px) {
 
     h2 {
-        text-align: center;
         font-size: 31.5px;
         font-style: normal;
         font-weight: 800;
